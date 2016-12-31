@@ -18,7 +18,7 @@ var time = date.getTime();
 function setCalendarContent(){
       date = new Date();
       day = date.getDay()+1;
-      var myurl = '"https://calendar.google.com/calendar/embed?showTitle=0&amp;showPrint=0&amp;showCalendars=0&amp;showTz=0&amp;mode=WEEK&amp;height=700&amp;wkst='+day+'&amp;bgcolor=%23FFFFFF&amp;src=aamdal.bottheim%40gmail.com&amp;color=%2344a703&amp;src=h8uaifdsi6s1vbksu9o5kgers0%40group.calendar.google.com&amp;color=%238C500B&amp;ctz=Europe%2FBrussels" style="border-width:0" width="1270" height="790" frameborder="0" scrolling="no"';
+      var myurl = '"https://calendar.google.com/calendar/embed?showTitle=0&amp;showPrint=0&amp;showCalendars=0&amp;showTz=0&amp;mode=WEEK&amp;height=1000&amp;wkst='+day+'&amp;bgcolor=%23FFFFFF&amp;src=aamdal.bottheim%40gmail.com&amp;color=%2344a703&amp;src=h8uaifdsi6s1vbksu9o5kgers0%40group.calendar.google.com&amp;color=%238C500B&amp;ctz=Europe%2FBrussels" style="border-width:0" width="1670" height="1000" frameborder="0" scrolling="no"';
       document.getElementById("mycontent").innerHTML = '<iframe src='+myurl+'></iframe>';
 }
 function setWebCamContent(){
@@ -29,7 +29,7 @@ function setWebCamContent(){
 function setWeatherContent(){
       date = new Date();
       time = date.getTime();
-      document.getElementById("mycontent").innerHTML = '<img src="http://www.yr.no/sted/Norge/Oslo/Oslo/Observatorie_terrasse/meteogram.png'+'?time='+time+'" width="100%"/><iframe width="315" scrolling="no" height="365" frameborder="0" allowfullscreen src="http://www.kartverket.no/sehavniva/sehavniva-lokasjonside/?cityid=72675&city=Frognerkilen&widget=true"></iframe>';
+      document.getElementById("mycontent").innerHTML = '<img src="http://www.yr.no/sted/Norge/Oslo/Oslo/Observatorie_terrasse/meteogram.png'+'?time='+time+'" width="100%"/><iframe width="630" scrolling="no" height="730" frameborder="0" allowfullscreen src="http://www.kartverket.no/sehavniva/sehavniva-lokasjonside/?cityid=72675&city=Frognerkilen&widget=true"></iframe>';
 }
 function changecontent() {
       mycounter++;
