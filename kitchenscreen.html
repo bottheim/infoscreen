@@ -21,14 +21,6 @@ function setCalendarContent(){
       var myurl = '"https://calendar.google.com/calendar/embed?showTitle=0&amp;showPrint=0&amp;showCalendars=0&amp;showTz=0&amp;mode=WEEK&amp;height=1000&amp;wkst='+day+'&amp;bgcolor=%23FFFFFF&amp;src=aamdal.bottheim%40gmail.com&amp;color=%2344a703&amp;src=h8uaifdsi6s1vbksu9o5kgers0%40group.calendar.google.com&amp;color=%238C500B&amp;src=1qgod4q6jlgbis4q8fjv0qk12c%40group.calendar.google.com&amp;color=%23AB8B00&amp;ctz=Europe%2FBrussels" style="border-width:0" width="1670" height="1000" frameborder="0" scrolling="no"';
       document.getElementById("mycontent").innerHTML = '<iframe src='+myurl+'></iframe>';
 }
-function setInboxContent(){
-      var myurl = '"https://inbox.google.com/"';
-      document.getElementById("mycontent").innerHTML = '<iframe src='+myurl+'></iframe>';
-}
-function setKeepContent(){
-      var myurl = '"https://keep.google.com/"';
-      document.getElementById("mycontent").innerHTML = '<iframe src='+myurl+'></iframe>';
-}
 function setWebCamContent(){
       date = new Date();
       time = date.getTime();
@@ -37,7 +29,7 @@ function setWebCamContent(){
 function setWeatherContent(){
       date = new Date();
       time = date.getTime();
-      document.getElementById("mycontent").innerHTML = '<img src="http://www.yr.no/sted/Norge/Oslo/Oslo/Observatorie_terrasse/meteogram.png'+'?time='+time+'" width="100%"/><iframe width="630" scrolling="no" height="720" frameborder="0" allowfullscreen src="http://www.kartverket.no/sehavniva/sehavniva-lokasjonside/?cityid=72675&city=Frognerkilen&widget=true"></iframe>';
+      document.getElementById("mycontent").innerHTML = '<img src="http://www.yr.no/sted/Norge/Oslo/Oslo/Observatorie_terrasse/meteogram.png'+'?time='+time+'" width="100%"/><iframe width="1620" scrolling="no" height="400" frameborder="0" allowfullscreen src="http://www.kartverket.no/sehavniva/sehavniva-lokasjonside/?cityid=72675&city=Frognerkilen&widget=true"></iframe>';
 }
 function changecontent() {
       mycounter++;
@@ -47,16 +39,12 @@ function changecontent() {
           setWebCamContent();
       } else if (mycounter == 3) {
           setWeatherContent();
-      } else if (mycounter == 4) {
-          setInboxContent();
           mycounter = 0;
-      } else if (mycounter == 5) {
-          setKeepContent();
-      }else {
+      } else {
           mycounter = 0;
       }
 }
-setInterval(changecontent, 30000);
+//setInterval(changecontent, 30000);
 //setCalendarContent();
 setWeatherContent();
 //setWebCamContent();
