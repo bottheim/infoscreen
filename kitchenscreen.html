@@ -18,7 +18,15 @@ var time = date.getTime();
 function setCalendarContent(){
       date = new Date();
       day = date.getDay()+1;
-      var myurl = '"https://calendar.google.com/calendar/embed?showTitle=0&amp;showPrint=0&amp;showCalendars=0&amp;showTz=0&amp;mode=WEEK&amp;height=1000&amp;wkst='+day+'&amp;bgcolor=%23FFFFFF&amp;src=aamdal.bottheim%40gmail.com&amp;color=%2344a703&amp;src=h8uaifdsi6s1vbksu9o5kgers0%40group.calendar.google.com&amp;color=%238C500B&amp;ctz=Europe%2FBrussels" style="border-width:0" width="1670" height="1000" frameborder="0" scrolling="no"';
+      var myurl = '"https://calendar.google.com/calendar/embed?showTitle=0&amp;showPrint=0&amp;showCalendars=0&amp;showTz=0&amp;mode=WEEK&amp;height=1000&amp;wkst='+day+'&amp;bgcolor=%23FFFFFF&amp;src=aamdal.bottheim%40gmail.com&amp;color=%2344a703&amp;src=h8uaifdsi6s1vbksu9o5kgers0%40group.calendar.google.com&amp;color=%238C500B&amp;src=1qgod4q6jlgbis4q8fjv0qk12c%40group.calendar.google.com&amp;color=%23AB8B00&amp;ctz=Europe%2FBrussels" style="border-width:0" width="1670" height="1000" frameborder="0" scrolling="no"';
+      document.getElementById("mycontent").innerHTML = '<iframe src='+myurl+'></iframe>';
+}
+function setInboxContent(){
+      var myurl = '"https://inbox.google.com/"';
+      document.getElementById("mycontent").innerHTML = '<iframe src='+myurl+'></iframe>';
+}
+function setKeepContent(){
+      var myurl = '"https://keep.google.com/"';
       document.getElementById("mycontent").innerHTML = '<iframe src='+myurl+'></iframe>';
 }
 function setWebCamContent(){
@@ -39,8 +47,12 @@ function changecontent() {
           setWebCamContent();
       } else if (mycounter == 3) {
           setWeatherContent();
+      } else if (mycounter == 4) {
+          setInboxContent();
           mycounter = 0;
-      } else {
+      } else if (mycounter == 5) {
+          setKeepContent();
+      }else {
           mycounter = 0;
       }
 }
