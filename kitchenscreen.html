@@ -29,7 +29,7 @@ function setWebCamContent(){
 function setWeatherContent(){
       date = new Date();
       time = date.getTime();
-      document.getElementById("mycontent").innerHTML = '<img src="http://www.yr.no/sted/Norge/Oslo/Oslo/Observatorie_terrasse/meteogram.png'+'?time='+time+'" width="100%"/><iframe width="1620" scrolling="no" height="400" frameborder="0" allowfullscreen src="http://www.kartverket.no/sehavniva/sehavniva-lokasjonside/?cityid=72675&city=Frognerkilen&widget=true"></iframe>';
+      document.getElementById("mycontent").innerHTML = '<img src="http://www.yr.no/sted/Norge/Oslo/Oslo/Observatorie_terrasse/meteogram.png'+'?time='+time+'" width="100%"/><p/><iframe width="100%" height="600" style="position: absolute; clip: rect(250px,2000px,800px,0px); top:420px;" scrolling="no" frameborder="0" allowfullscreen src="http://www.kartverket.no/sehavniva/sehavniva-lokasjonside/?cityid=72675&city=Frognerkilen&widget=true"></iframe>';
 }
 function changecontent() {
       mycounter++;
