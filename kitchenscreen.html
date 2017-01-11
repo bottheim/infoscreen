@@ -50,8 +50,10 @@ function keypresserd(event) {
       if (event.keyCode == 114){
           changecontent();
           mycounter = -4;
-      } else if (event.keyCode == 113){
-          
+      } else if (event.keyCode == 172){
+          date = new Date();
+          time = date.getTime();
+          window.location.href = window.location.href + '?cb=' + time;
       }
 }     
 setInterval(changecontent, 30000);
