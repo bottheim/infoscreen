@@ -46,11 +46,10 @@ function changecontent() {
       }
 }
 function keypresserd(event) {
-      document.getElementById("mycontent").innerHTML = event.keyCode;
-      if (event.keyCode == 114){
+      if (event.keyCode == 39){
           changecontent();
           mycounter = -4;
-      } else if (event.keyCode == 172){
+      } else if (event.keyCode == 33){
           date = new Date();
           time = date.getTime();
           window.location.href = window.location.href + '?cb=' + time;
