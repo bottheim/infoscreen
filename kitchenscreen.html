@@ -52,6 +52,7 @@ function changecontent() {
 }
 function keypresserd(event) {
       if (event.keyCode == 39){
+          waitcounter = 0;
           changecontent();
           waitcounter = 4;
       } else if (event.keyCode == 37){
