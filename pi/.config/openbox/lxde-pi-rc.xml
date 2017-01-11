@@ -169,11 +169,14 @@
   </dock>
   <keyboard>
     <chainQuitKey>C-g</chainQuitKey>
-<!-- Keybinding for screen power on -->
+<!-- Keybinding for Rii mini keyboard-->
 <keybind key="XF86Sleep">
     <action name="Execute">
         <command>/opt/vc/bin/vcgencmd display_power 1</command>
     </action>
+</keybind>
+<keybind key="XF86Home">
+      <action name="Close"/>
 </keybind>
     <!-- Keybindings for desktop switching -->
     <keybind key="C-A-Left">
