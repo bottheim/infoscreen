@@ -22,6 +22,10 @@ function setCalendarContent(){
       var myurl = '"https://calendar.google.com/calendar/embed?showTitle=0&amp;showPrint=0&amp;showCalendars=0&amp;showTz=0&amp;mode=WEEK&amp;height=1000&amp;wkst='+day+'&amp;bgcolor=%23FFFFFF&amp;src=aamdal.bottheim%40gmail.com&amp;color=%2344a703&amp;src=h8uaifdsi6s1vbksu9o5kgers0%40group.calendar.google.com&amp;color=%238C500B&amp;src=1qgod4q6jlgbis4q8fjv0qk12c%40group.calendar.google.com&amp;color=%23AB8B00&amp;ctz=Europe%2FBrussels" style="border-width:0" width="1670" height="1000" frameborder="0" scrolling="no"';
       document.getElementById("mycontent").innerHTML = '<iframe src='+myurl+'></iframe>';
 }
+function setCalendarMonthContent(){
+      var myurl = '"https://calendar.google.com/calendar/embed?showTitle=0&amp;showPrint=0&amp;showCalendars=0&amp;showTz=0&amp;height=1000&amp;wkst=2&amp;bgcolor=%23FFFFFF&amp;src=aamdal.bottheim%40gmail.com&amp;color=%2344a703&amp;ctz=Europe%2FBrussels" style="border-width:0" width="1670" height="1000" frameborder="0" scrolling="no"';
+      document.getElementById("mycontent").innerHTML = '<iframe src='+myurl+'></iframe>';
+}
 function setWebCamContent(){
       date = new Date();
       time = date.getTime();
@@ -38,9 +42,11 @@ function changecontent() {
             mycounter++;
             if (mycounter == 1 ) {
                 setCalendarContent();
-            } else if (mycounter == 2) {
-                setWebCamContent();
+            } else if (mycounter == 2 ) {
+                setCalendarMonthContent();
             } else if (mycounter == 3) {
+                setWebCamContent();
+            } else if (mycounter == 4) {
                 setWeatherContent();
                 mycounter = 0;
             } else {
