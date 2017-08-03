@@ -2,4 +2,4 @@
 @pcmanfm --desktop --profile LXDE-pi
 @xscreensaver -no-splash
 @point-rpi
-@/usr/bin/chromium-browser --disable-session-crashed-bubble --kiosk --allow-running-insecure-content https://rawgit.com/bottheim/infoscreen/master/kitchenscreen.html
+@/usr/bin/chromium-browser --disable-session-crashed-bubble --kiosk --allow-running-insecure-content http://rawgit.com/bottheim/infoscreen/master/kitchenscreen.html
