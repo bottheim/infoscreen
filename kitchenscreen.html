@@ -29,8 +29,9 @@ function setCalendarMonthContent(){
 function setWebCamContent(){
       date = new Date();
       time = date.getTime();
+      document.getElementById("mycontent").innerHTML = '<img src="http://skarpsno.azurewebsites.net/Webcam/Cam1.jpg'+'?time='+time+'" width="100%"/>';
       //document.getElementById("mycontent").innerHTML = '<img src="http://skarpsno.noip.me:4200/cgi-bin/viewer/video.jpg'+'?time='+time+'" width="100%"/>';
-      document.getElementById("mycontent").innerHTML = '<img src="http://www.ohv.oslo.no/filestore/webcam/vippetangen.jpg'+'?time='+time+'" width="100%"/>';
+      //document.getElementById("mycontent").innerHTML = '<img src="http://www.ohv.oslo.no/filestore/webcam/vippetangen.jpg'+'?time='+time+'" width="100%"/>';
 }
 function setWeatherContent(){
       date = new Date();
@@ -50,18 +51,18 @@ function changecontent() {
       if (waitcounter <= 0 ) {
             mycounter++;
             if (mycounter == 1 ) {
-                setCalendarContent();
-            } else if (mycounter == 2 ) {
-                setCalendarMonthContent();
-            } else if (mycounter == 3) {
                 setWeatherContent();
-            } else if (mycounter == 4) {
+            } else if (mycounter == 2 ) {
+                setCalendarContent();
+            } else if (mycounter == 3) {
+                setWebCamContent();
+            } /*else if (mycounter == 4) {
                 setRuterContent();
                 mycounter = 0;
-            } /*else if (mycounter == 5) {
+            } else if (mycounter == 5) {
                 setHavContent();
             } else if (mycounter == 6) {
-                setWebCamContent();
+                setCalendarMonthContent();
                 mycounter = 0;
             }*/ else {
                 mycounter = 0;
@@ -83,9 +84,9 @@ function keypresserd(event) {
 }     
 setInterval(changecontent, 30000);
 //setCalendarContent();
-//setWeatherContent();
+setWeatherContent();
 //setWebCamContent();
-setRuterContent();
+//setRuterContent();
 </script>
 
 </body>
