@@ -42,7 +42,8 @@ function setWeatherContent(){
 function setHavContent(){
       //date = new Date();
       //time = date.getTime();
-      document.getElementById("mycontent").innerHTML = '<iframe width="1650" height="800" scrolling="no" frameborder="0" src="http://www.kartverket.no/sehavniva/sehavniva-lokasjonside/?cityid=72675&city=Frognerkilen&widget=true"></iframe>';
+      //document.getElementById("mycontent").innerHTML = '<iframe width="1650" height="800" scrolling="no" frameborder="0" src="http://www.kartverket.no/sehavniva/sehavniva-lokasjonside/?cityid=72675&city=Frognerkilen&widget=true"></iframe>';
+      document.getElementById("mycontent").innerHTML = '<img src="https://www.yr.no/place/Ocean/59.90487_10.70550/marinogram.png" width="93%"/>'; 
 }
 function setRuterContent(){
       document.getElementById("mycontent").innerHTML = '<iframe width="1650" height="800" scrolling="no" frameborder="0" src="https://mon.ruter.no/monitor/3010110/Solli/3010031/Nationalteateret/"></iframe>';
@@ -56,11 +57,11 @@ function changecontent() {
                 setCalendarContent();
             } else if (mycounter == 3) {
                 setWebCamContent();
-            } /*else if (mycounter == 4) {
-                setRuterContent();
-                mycounter = 0;
-            } else if (mycounter == 5) {
+            } else if (mycounter == 4) {
                 setHavContent();
+                mycounter = 0;
+            } /*else if (mycounter == 5) {
+                setRuterContent();
             } else if (mycounter == 6) {
                 setCalendarMonthContent();
                 mycounter = 0;
