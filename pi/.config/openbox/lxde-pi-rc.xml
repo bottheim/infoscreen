@@ -169,39 +169,48 @@
   </dock>
   <keyboard>
     <chainQuitKey>C-g</chainQuitKey>
-<!-- Keybinding for Rii mini keyboard-->
-<keybind key="XF86Sleep">
-    <action name="Execute">
-        <command>/opt/vc/bin/vcgencmd display_power 1</command>
-    </action>
-</keybind>
-<keybind key="XF86Home">
+    <!-- Keybinding for Rii mini keyboard-->
+    <keybind key="XF86Sleep">
+      <action name="Execute">
+	<command>/opt/vc/bin/vcgencmd display_power 1</command>
+      </action>
+    </keybind>
+    <!-- <keybind key="XF86AudioPlay"> -->
+    <keybind key="0xAC">
+      <action name="Execute">
+        <command>/bin/sh /home/pi/pod_play.sh</command>
+      </action>
+    </keybind>
+    <keybind key="0x75">
+      <action name="Execute">
+        <command>pkill omxplayer.bin</command>
+      </action>
+    </keybind>
+    <keybind key="XF86HomePage">
       <action name="Close"/>
-</keybind>
+    </keybind>
     <!-- Keybindings for desktop switching -->
     <keybind key="C-A-Left">
-      <action name="DesktopLeft">
-        <dialog>no</dialog>
-        <wrap>no</wrap>
+      <action name="UnmaximizeFull"/>
+      <action name="MaximizeVert"/>
+      <action name="MoveResizeTo">
+        <width>50%</width>
       </action>
+      <action name="MoveToEdge"><direction>west</direction></action>
     </keybind>
     <keybind key="C-A-Right">
-      <action name="DesktopRight">
-        <dialog>no</dialog>
-        <wrap>no</wrap>
+      <action name="UnmaximizeFull"/>
+      <action name="MaximizeVert"/>
+      <action name="MoveResizeTo">
+        <width>50%</width>
       </action>
-    </keybind>
-    <keybind key="C-A-Up">
-      <action name="DesktopUp">
-        <dialog>no</dialog>
-        <wrap>no</wrap>
-      </action>
+      <action name="MoveToEdge"><direction>east</direction></action>
     </keybind>
     <keybind key="C-A-Down">
-      <action name="DesktopDown">
-        <dialog>no</dialog>
-        <wrap>no</wrap>
-      </action>
+      <action name="Unmaximize"/>
+    </keybind>
+    <keybind key="C-A-Up">
+      <action name="Maximize"/>
     </keybind>
     <keybind key="S-A-Left">
       <action name="SendToDesktopLeft">
@@ -328,6 +337,22 @@
     <keybind key="A-C-Delete">
       <action name="Execute">
         <command>lxtask</command>
+      </action>
+    </keybind>
+    <!-- Keybindings for audio volume media keys -->
+    <keybind key="XF86AudioRaiseVolume">
+      <action name="Execute">
+        <command>amixer set PCM 250+ unmute</command>
+      </action>
+    </keybind>
+    <keybind key="XF86AudioLowerVolume">
+      <action name="Execute">
+        <command>amixer set PCM 250- unmute</command>
+      </action>
+    </keybind>
+    <keybind key="XF86AudioMute">
+      <action name="Execute">
+        <command>amixer set PCM toggle</command>
       </action>
     </keybind>
   </keyboard>
