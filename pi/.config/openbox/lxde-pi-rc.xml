@@ -186,6 +186,11 @@
         <command>pkill omxplayer.bin</command>
       </action>
     </keybind>
+    <keybind key="0x70">
+      <action name="Execute">
+        <command>feh -FYxzD7 /home/pi/images/</command>
+      </action>
+    </keybind>
     <keybind key="XF86HomePage">
       <action name="Close"/>
     </keybind>
