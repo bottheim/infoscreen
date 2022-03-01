@@ -85,7 +85,7 @@
         },
         "fagkode" : {
           "type" : "uri",
-          "value" : "http://psi.johan.no/kl06/AKT2007"
+          "value" : "http://psi.johan.no/kl06/AKT20071"
         },
         "laereplan" : {
           "type" : "literal",
@@ -99,7 +99,7 @@
         },
         "fagkode" : {
           "type" : "uri",
-          "value" : "http://psi.johan.no/kl06/AKT2007"
+          "value" : "http://psi.johan.no/kl06/AKT20072"
         },
         "laereplan" : {
           "type" : "literal",
@@ -253,7 +253,7 @@
         },
         "fagkode" : {
           "type" : "uri",
-          "value" : "http://psi.johan.no/kl06/AKV2008"
+          "value" : "http://psi.johan.no/kl06/AKV20081"
         },
         "laereplan" : {
           "type" : "literal",
@@ -267,7 +267,7 @@
         },
         "fagkode" : {
           "type" : "uri",
-          "value" : "http://psi.johan.no/kl06/AKV2008"
+          "value" : "http://psi.johan.no/kl06/AKV20082"
         },
         "laereplan" : {
           "type" : "literal",
