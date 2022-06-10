@@ -1,6 +1,7 @@
 [{
   "kode": "informasjonogdetaljer",
   "uri": "http://psi.udir.no/pet/np-eng-formaal/informasjonogdetaljer",
+  "fagkode": "http://psi.udir.no/kl06/ENG1007",
   "tittel": [{
     "spraak": "default",
     "verdi": "Finne"
@@ -22,6 +23,7 @@
 }, {
   "kode": "hovedinnhold",
   "uri": "http://psi.udir.no/pet/np-eng-formaal/hovedinnhold",
+  "fagkode": "http://psi.udir.no/kl06/ENG1007",
   "tittel": [{
     "spraak": "default",
     "verdi": "forstå hovedinnhold"
@@ -40,6 +42,7 @@
 }, {
   "kode": "tolkeogforstaa",
   "uri": "http://psi.udir.no/pet/np-eng-formaal/tolkeogforstaa",
+  "fagkode": "http://psi.udir.no/kl06/ENG1007",
   "tittel": [{
     "spraak": "default",
     "verdi": "Tolke og forstå"
@@ -58,6 +61,7 @@
 }, {
   "kode": "sammenheng",
   "uri": "http://psi.udir.no/pet/np-eng-formaal/sammenheng",
+  "fagkode": "http://psi.udir.no/kl06/ENG1007",
   "tittel": [{
     "spraak": "default",
     "verdi": "Forstå sammenheng"
@@ -76,6 +80,7 @@
 }, {
   "kode": "avansertvokabular",
   "uri": "http://psi.udir.no/pet/np-eng-formaal/avansertvokabular",
+  "fagkode": "http://psi.udir.no/kl06/ENG1007",
   "tittel": [{
     "spraak": "default",
     "verdi": "Forstå avansert vokabular"
@@ -94,6 +99,7 @@
 }, {
   "kode": "grammatiskestrukturer",
   "uri": "http://psi.udir.no/pet/np-eng-formaal/grammatiskestrukturer",
+  "fagkode": "http://psi.udir.no/kl06/ENG1007",
   "tittel": [{
     "spraak": "default",
     "verdi": "Bruke grammatiske strukturer"
