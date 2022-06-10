@@ -1,6 +1,6 @@
 [{
   "kode": "informasjonogdetaljer",
-  "uri": "http://psi.udir.no/pet/np-eng-formaal/informasjonogdetaljer",
+  "uri": "http://psi.udir.no/pet/np-eng-formaal/informasjonogdetaljertest",
   "fagkode": "http://psi.udir.no/kl06/ENG1007",
   "tittel": [{
     "spraak": "default",
@@ -22,7 +22,7 @@
   "rekkefoelge": 1
 }, {
   "kode": "hovedinnhold",
-  "uri": "http://psi.udir.no/pet/np-eng-formaal/hovedinnhold",
+  "uri": "http://psi.udir.no/pet/np-eng-formaal/hovedinnholdtest",
   "fagkode": "http://psi.udir.no/kl06/ENG1007",
   "tittel": [{
     "spraak": "default",
@@ -41,7 +41,7 @@
   "rekkefoelge": 2
 }, {
   "kode": "tolkeogforstaa",
-  "uri": "http://psi.udir.no/pet/np-eng-formaal/tolkeogforstaa",
+  "uri": "http://psi.udir.no/pet/np-eng-formaal/tolkeogforstaatest",
   "fagkode": "http://psi.udir.no/kl06/ENG1007",
   "tittel": [{
     "spraak": "default",
@@ -60,7 +60,7 @@
   "rekkefoelge": 3
 }, {
   "kode": "sammenheng",
-  "uri": "http://psi.udir.no/pet/np-eng-formaal/sammenheng",
+  "uri": "http://psi.udir.no/pet/np-eng-formaal/sammenhengtest",
   "fagkode": "http://psi.udir.no/kl06/ENG1008",
   "tittel": [{
     "spraak": "default",
@@ -79,7 +79,7 @@
   "rekkefoelge": 4
 }, {
   "kode": "avansertvokabular",
-  "uri": "http://psi.udir.no/pet/np-eng-formaal/avansertvokabular",
+  "uri": "http://psi.udir.no/pet/np-eng-formaal/avansertvokabulartest",
   "fagkode": "http://psi.udir.no/kl06/ENG1008",
   "tittel": [{
     "spraak": "default",
@@ -98,7 +98,7 @@
   "rekkefoelge": 5
 }, {
   "kode": "grammatiskestrukturer",
-  "uri": "http://psi.udir.no/pet/np-eng-formaal/grammatiskestrukturer",
+  "uri": "http://psi.udir.no/pet/np-eng-formaal/grammatiskestrukturertest",
   "fagkode": "http://psi.udir.no/kl06/ENG1009",
   "tittel": [{
     "spraak": "default",
