@@ -74,9 +74,9 @@ function changecontent() {
 }
 function keypresserd(event) {
       if (event.keyCode == 39){
-          waitcounter = 0;
+          waitcounter = 0; //Make sure correct if is triggered
           changecontent();
-          waitcounter = 4;
+          waitcounter = 4; //Wait for 2 min (4x30sec)
       } else if (event.keyCode == 37){
           date = new Date();
           time = date.getTime();
@@ -84,9 +84,9 @@ function keypresserd(event) {
       }
 }
 setInterval(changecontent, 30000);
-setCalendarContent();
+//setCalendarContent();
 //setCalendarMonthContent();
-//setWeatherContent();
+setWeatherContent();
 //setWebCamContent();
 //setRuterContent();
 </script>
