@@ -16,14 +16,16 @@ var date = new Date();
 var day = date.getDay();
 var time = date.getTime();
 
+
+
 function setCalendarContent(){
       date = new Date();
       day = date.getDay()+1;
-      var myurl = '"https://calendar.google.com/calendar/embed?showTitle=0&amp;showPrint=0&amp;showCalendars=0&amp;showTz=0&amp;mode=WEEK&amp;height=1000&amp;wkst='+day+'&amp;bgcolor=%23FFFFFF&amp;ctz=Asia%2FKolkata&amp;src=YWFtZGFsLmJvdHRoZWltQGdtYWlsLmNvbQ&amp;src=MXFnb2Q0cTZqbGdiaXM0cThmanYwcWsxMmNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=OG91NGpibTc5NWVmczZwMWFhZmY5Ym5zZjJrZzVlZXZAaW1wb3J0LmNhbGVuZGFyLmdvb2dsZS5jb20&amp;src=cXBjbDBpYmpkbHQyMHZnYTlvaDFnbGVzcTQzcTczYmJAaW1wb3J0LmNhbGVuZGFyLmdvb2dsZS5jb20&amp;color=%2344a703&amp;color=%23E4C441&amp;color=%23B39DDB&amp;color=%239E69AF" style="border-width:0" width="1800" height="970" frameborder="0" scrolling="no"';
+      var myurl = '"https://calendar.google.com/calendar/embed?showTitle=0&amp;showPrint=0&amp;showCalendars=0&amp;showTz=0&amp;mode=WEEK&amp;height=1000&amp;wkst='+day+'&amp;bgcolor=%23FFFFFF&amp;ctz=Asia%2FKolkata&amp;src=YWFtZGFsLmJvdHRoZWltQGdtYWlsLmNvbQ&amp;src=MXFnb2Q0cTZqbGdiaXM0cThmanYwcWsxMmNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=MjdqYm90dGhlaW1AYWVzLmFjLmlu&amp;src=MjhqYm90dGhlaW1AYWVzLmFjLmlu&amp;src=cXBjbDBpYmpkbHQyMHZnYTlvaDFnbGVzcTQzcTczYmJAaW1wb3J0LmNhbGVuZGFyLmdvb2dsZS5jb20&amp;src=OG91NGpibTc5NWVmczZwMWFhZmY5Ym5zZjJrZzVlZXZAaW1wb3J0LmNhbGVuZGFyLmdvb2dsZS5jb20&amp;src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;src=bDlmMGNpNzRvNDRnN2ZibXI5M3BiMjVjcHVhdGpnYXRAaW1wb3J0LmNhbGVuZGFyLmdvb2dsZS5jb20&amp;color=%2344a703&amp;color=%23E4C441&amp;color=%23B39DDB&amp;color=%239E69AF" style="border-width:0" width="1800" height="960" frameborder="0" scrolling="no"';
       document.getElementById("mycontent").innerHTML = '<iframe src='+myurl+'></iframe>';
 }
 function setCalendarMonthContent(){
-      var myurl = '"https://calendar.google.com/calendar/embed?showTitle=0&amp;showPrint=0&amp;showCalendars=0&amp;showTz=0&amp;height=1000&amp;wkst=2&amp;bgcolor=%23FFFFFF&amp;src=aamdal.bottheim%40gmail.com&amp;color=%2344a703&amp;ctz=Asia%2FKolkata" style="border-width:0" width="1800" height="970" frameborder="0" scrolling="no"';
+      var myurl = '"https://calendar.google.com/calendar/embed?showTitle=0&amp;showPrint=0&amp;showCalendars=0&amp;showTz=0&amp;height=1000&amp;wkst=2&amp;bgcolor=%23FFFFFF&amp;src=aamdal.bottheim%40gmail.com&amp;color=%2344a703&amp;ctz=Asia%2FKolkata" style="border-width:0" width="1800" height="960" frameborder="0" scrolling="no"';
       document.getElementById("mycontent").innerHTML = '<iframe src='+myurl+'></iframe>';
 }
 function setWebCamContent(){
